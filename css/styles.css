@@ -32,10 +32,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-container {
  display: flex;
  align-items: center;
+ width: 1158px;
 }
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -45,6 +45,9 @@ p, h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-Brand);
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
     }
 .header span{
     color: var(--dark);
@@ -73,6 +76,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .header-container {
     display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .header-contacts {
      font-style: normal;
@@ -96,6 +101,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 .basis {
 background-color: var(--hero-background);
+padding: 188px 0;
+}
+.main-btn:hover,
+.main-btn:focus {
+    background-color: var(--pressed-state);
+    cursor: pointer;
 }
 .title {
     font-weight: 700;
@@ -104,9 +115,9 @@ background-color: var(--hero-background);
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-background);
-    padding: 188px 472px 48px 472px;
     max-width: 496px;
-    margin: auto;
+    margin-left: 472px;
+    margin-right: 472px;
 }
 .main-btn {
     font-family: "Roboto", sans-serif;
@@ -116,36 +127,25 @@ background-color: var(--hero-background);
     letter-spacing: 0.04em;
     background: var(--primary-Brand);
     color: var(--white-background);
+    display: block;
     min-width: 169px;
     height: 56px;
-    padding: 16px 32px 16px 32px;
-    margin: 48px 635px 188px 636px;
-    gap: 10px;
-}
-.main-btn:hover,
-.main-btn:focus {
-    background-color: var(--pressed-state);
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
+    margin-top: 48px;
+    margin-left: 636px;
 }
-.main-button {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    background: var(--light);
-    color: var(--primary-Brand);
+.main-features {
+    padding: 120px 0;
 }
-.main-button:hover,
-.main-button:focus {
-    background: var(--pressed-state);
-    color: var(--white-background);
-    cursor: pointer;
-}
-.container-features {
-    padding: 120px 156px;
+.hidden {
+    display: none;
 }
 main-features-list {
+   display: flex;
+}
+.main-features-list :not(:last-child) {
     gap: 24px;
 }
 .features {
@@ -157,7 +157,21 @@ main-features-list {
     margin-bottom: 8px;
 }
 .features-item {
-    width:((100%-312)/0ch);
+ width: calc((100% - 72px) / 4);
+}
+.team {
+    background-color: var(--light);
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.worker {
+    background-color: var(--white-background);
+}
+.main-doing {
+    padding-bottom: 120px;
 }
 .what-doing {
  font-size: 36px;
@@ -167,32 +181,28 @@ main-features-list {
  text-transform: capitalize;
  color: var(--dark);
  margin-bottom: 72px;
- min-width: 323px;
- margin: 0 auto;
 }
 .img {
+    display: flex;
     gap: 24px;
-    padding-right: 156px;
-    padding-left: 156px;
-    margin-bottom: 120px;
+}
+.img-working {
+    width: calc((100% - 48px) / 3);
 }
 .team {
-    background-color: var(--light);
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    }
+    padding: 120px 0;
+}
 .team-img {
  gap: 24px;
  padding-left: 156px;
  padding-right: 156px;
- padding-bottom: 120px;
 }
 .worker {
-    background-color: var(--white-background);
-
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+.worker-information {
+    padding: 32px 16px;
 }
 .developer {
     font-weight: 500;
@@ -200,8 +210,18 @@ main-features-list {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    margin-top: 32px;
+    text-align: center;
     margin-bottom: 8px;
+}
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.main {
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 .team-studio {
     font-size: 36px;
@@ -209,16 +229,35 @@ main-features-list {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--dark);
-    padding-top: 120px;
     margin-bottom: 72px;
-    max-width: 323px;
-    margin: 0 auto;
 }
-.description {
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+.main-button:hover,
+.main-button:focus {
+    background: var(--pressed-state);
+    color: var(--white-background);
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.main-button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding-bottom: 32px;
+    letter-spacing: 0.04em;
+    background: var(--light);
+    color: var(--primary-Brand);
+    padding: 12px 24px;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+}
+.pictures {
+    width: calc((100% - 48px) / 3);
 }
 .projects-img {
     font-weight: 500;
@@ -226,46 +265,34 @@ main-features-list {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    margin-top: 32px;
     margin-bottom: 8px;
-    padding-left: 16px;
 }
 .program {
     color: var(--text);
     letter-spacing: 0.02em;
     line-height: 1.5;
-    padding-bottom: 16px;
-    padding-left: 16px;
+}
+.main-img {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.img-work {
+    padding: 32px 16px;
+    border: 1px solid var(--accent);
+    border-top: none;
 }
 footer {
     background-color: var(--dark);
+    padding: 100px 0
 }
 .footer-text {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light);
-    margin-top: 32px;
+    max-width: 264px;
 }
-.container-footer{
-    padding: 100px 1020px 84px 156px;
-}
-.navigation {
-    margin: 96px 427px 72px;
-    gap: 24px;
-}
-.main-button {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border: 1px solid #E7E9FC;
-}
-.main-img {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 156px;
-    padding-right: 156px;
-    gap: 24px;
-}
-.img-work {
-    width: calc((100%-48px)/3);
-    border: 1px solid #E7E9FC;
+.container-footer {
+    padding-left: 155px;
 }

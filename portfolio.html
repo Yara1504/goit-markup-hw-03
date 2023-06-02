@@ -7,12 +7,11 @@
     <meta name="web_stidio" content="web studio, development of sites, mobile applications">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Web_stidio</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
-    <title>Web_stidio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -40,86 +39,104 @@
             </address>
         </div>
     </header>
-    <main class="main">
-        <section>
-            <ul class="navigation list">
-                <li><button type="button" class="main-button">All</button></li>
-                <li><button type="button" class="main-button">Web Site</button></li>
-                <li><button type="button" class="main-button">App</button></li>
-                <li><button type="button" class="main-button">Design</button></li>
-                <li><button type="button" class="main-button">Marketing</button></li>
-            </ul>
-            <ul class="main-img list">
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgr.jpg" alt="Banking_App"
-                            width="360" height="300">
-                        <h2 class="projects-img">Banking App Interface Concept</h2>
-                        <p class="program">App</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgt.jpg" alt="Cashless_Payment"
-                            width="360" height="300">
-                        <h2 class="projects-img">Cashless Payment</h2>
-                        <p class="program">Marketing</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgy.jpg" alt="Meditation_App"
-                            width="360" height="300">
-                        <h2 class="projects-img">Meditation App</h2>
-                        <p class="program">App</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgu.jpg" alt="Taxi_Service"
-                            width="360" height="300">
-                        <h2 class="projects-img">Taxi Service</h2>
-                        <p class="program">Marketing</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgi.jpg" alt="Screen_Illustrations"
-                            width="360" height="300">
-                        <h2 class="projects-img">Screen Illustrations</h2>
-                        <p class="program">Design</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgo.jpg" alt="Online_Courses"
-                            width="360" height="300">
-                        <h2 class="projects-img">Online Courses</h2>
-                        <p class="program">Marketing</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgp.jpg" alt="Instagram_Stories"
-                            width="360" height="300">
-                        <h2 class="projects-img">Instagram Stories Concept</h2>
-                        <p class="program">Design</p>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imga.jpg" alt="Organic_Food"
-                            width="360" height="300">
-                        <h2 class="projects-img">Organic Food</h2>
-                        <p class="program">Web Site</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html" class="img-work link"><img src="./images/imgs.jpg" alt="Fresh_Coffee"
-                            width="360" height="300">
-                        <h2 class="projects-img">Fresh Coffee</h2>
-                        <p class="program">Web Site</p>
-                    </a>
-                </li>
-            </ul>
+    <main>
+        <section class="main">
+            <div class="container portfolio">
+                <h1 class="hidden">portfolio</h1>
+                <ul class="navigation list">
+                    <li><button type="button" class="main-button">All</button></li>
+                    <li><button type="button" class="main-button">Web Site</button></li>
+                    <li><button type="button" class="main-button">App</button></li>
+                    <li><button type="button" class="main-button">Design</button></li>
+                    <li><button type="button" class="main-button">Marketing</button></li>
+                </ul>
+                <ul class="main-img list">
+                    <li class="pictures">
+                        <a href="./index.html" class="img-work link"><img src="./images/imgr.jpg" alt="Banking_App"
+                                width="360" height="300">
+                            <h2 class="projects-img">Banking App Interface Concept</h2>
+                            <p class="program">App</p>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgt.jpg" alt="Cashless_Payment" width="360" height="300">
+                                <h2 class="projects-img">Cashless Payment</h2>
+                                <p class="program">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgy.jpg" alt="Meditation_App" width="360" height="300">
+                                <h2 class="projects-img">Meditation App</h2>
+                                <p class="program">App</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgu.jpg" alt="Taxi_Service" width="360" height="300">
+                                <h2 class="projects-img">Taxi Service</h2>
+                                <p class="program">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgi.jpg" alt="Screen_Illustrations" width="360" height="300">
+                                <h2 class="projects-img">Screen Illustrations</h2>
+                                <p class="program">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgo.jpg" alt="Online_Courses" width="360" height="300">
+                                <h2 class="projects-img">Online Courses</h2>
+                                <p class="program">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgp.jpg" alt="Instagram_Stories" width="360" height="300">
+                                <h2 class="projects-img">Instagram Stories Concept</h2>
+                                <p class="program">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imga.jpg" alt="Organic_Food" width="360" height="300">
+                                <h2 class="projects-img">Organic Food</h2>
+                                <p class="program">Web Site</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pictures">
+                        <a href="./index.html">
+                            <div class="img-work link">
+                                <img src="./images/imgs.jpg" alt="Fresh_Coffee" width="360" height="300">
+                                <h2 class="projects-img">Fresh Coffee</h2>
+                                <p class="program">Web Site</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container-footer">
+        <div class="container container-footer">
             <a href="./index.html" class="logo link">Web<span class="studio">Studio</span></a>
             <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing &
                 growth solutions.</p>
