@@ -20,18 +20,19 @@ body {
 img {
     display: block;
 }
-.container {
-    width: 100%;
-    box-sizing: border-box;
+ul {
+    margin: 0;
+    padding: 0;
 }
 .header-container {
- display: flex;
- align-items: center;
- width: 1158px;
- padding: 0 15px;
+    display: flex;
+    width: 1158px;
+    margin: 0;
+    padding: 0 15px;
+    padding: 24px 0;
 }
 .header {
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--accent);
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -42,8 +43,7 @@ img {
     text-transform: uppercase;
     color: var(--primary-Brand);
     margin-right: 76px;
-    display: inline-block;
-    margin-bottom: 16px;
+    padding-left: 156px;
     }
 .header span{
     color: var(--dark);
@@ -56,8 +56,10 @@ img {
 }
 .list {
     list-style: none;
-    display: flex;
-    gap: 40px ;
+}
+.contacts-list {
+ display: flex;
+ gap: 40px;
 }
 .header-menu {
     font-weight: 500;
@@ -65,16 +67,17 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--hero-background);  
-    display: flex; 
+    display: flex;
     align-items: center;
-    flex-grow: 1;
     gap: 40px;
 }
 .header-menu-element {
-    padding: 24px 0;
+    display: flex;
 }
 .header-contacts {
      font-style: normal;
+     gap: 40px;
+     margin-left: auto;
 }
 .header-menu:hover,
 .header-menu:focus {
@@ -133,15 +136,19 @@ padding: 188px 0;
 .main-features {
     padding: 120px 0;
 }
-.hidden {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin:... clip-path: inset(100%);
+    clip:rect(0 0 0 0);
+    overflow: hidden;
 }
-main-features-list {
+.main-features-list {
    display: flex;
-   width: calc((100% - 72px) / 4);
-}
-.main-features-list :not(:last-child) {
-    gap: 24px;
+   gap: 24px;
+   padding-left: 156px;
+   padding-right: 156px;
 }
 .features {
     font-weight: 500;
@@ -167,6 +174,8 @@ main-features-list {
 }
 .main-doing {
     padding-bottom: 120px;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 .what-doing {
  font-size: 36px;
@@ -182,15 +191,16 @@ main-features-list {
     gap: 24px;
 }
 .img-working {
-    width: calc((100% - 48px) / 3);
+ width: calc((100% - 48px) / 3);
 }
 .team {
     padding: 120px 0;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 .team-img {
+ display: flex;
  gap: 24px;
- padding-left: 156px;
- padding-right: 156px;
 }
 .worker {
     width: calc((100% - 72px) / 4);
@@ -214,10 +224,6 @@ main-features-list {
     letter-spacing: 0.02em;
     text-align: center;
 }
-.main {
-    padding-top: 96px;
-    padding-bottom: 120px;
-}
 .team-studio {
     font-size: 36px;
     line-height: 1.11;
@@ -225,6 +231,9 @@ main-features-list {
     text-align: center;
     color: var(--dark);
     margin-bottom: 72px;
+}
+.main-portfolio {
+    padding-top: 96px;
 }
 .navigation {
     display: flex;
@@ -260,7 +269,6 @@ main-features-list {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    margin-bottom: 8px;
 }
 .program {
     color: var(--text);
@@ -268,17 +276,19 @@ main-features-list {
     line-height: 1.5;
 }
 .main-img {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 48px;
-
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: 24px;
+ row-gap: 48px;
+ padding-left: 156px;
+ padding-right: 156px;
+ padding-bottom: 120px;
 }
 .img-work {
-    padding: 32px 16px;
-    border: 1px solid var(--accent);
-    border-top: none;
-    width: calc((100% - 48px) / 3);
+ padding: 32px 16px;
+ border: 1px solid var(--accent);
+ border-top: none;
+ margin-bottom: 8px;
 }
 footer {
     background-color: var(--dark);
@@ -290,6 +300,17 @@ footer {
     color: var(--light);
     max-width: 264px;
 }
+.logo-foot {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-Brand);
+    display: inline-block;
+    margin-bottom: 16px;
+}
 .container-footer {
-    padding-left: 155px;
+    padding-left: 156px;
 }
