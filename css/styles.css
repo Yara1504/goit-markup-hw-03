@@ -32,7 +32,6 @@ ul {
 }
 .header {
     border-bottom: 1px solid var(--accent);
-    padding: 24px 0;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -70,6 +69,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 .header-menu-element {
     display: flex;
@@ -137,13 +137,14 @@ padding: 188px 0;
     padding: 120px 0;
 }
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin:...hidden;
 }
 .main-features-list {
    display: flex;
    gap: 24px;
-   padding-left: 156px;
-   padding-right: 156px;
 }
 .features {
     font-weight: 500;
@@ -188,11 +189,6 @@ padding: 188px 0;
 }
 .img-working {
  width: calc((100% - 48px) / 3);
-}
-.team {
-    padding: 120px 0;
-    padding-left: 156px;
-    padding-right: 156px;
 }
 .team-img {
  display: flex;
