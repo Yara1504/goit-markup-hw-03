@@ -22,7 +22,7 @@ img {
 }
 ul {
     margin: 0;
-    padding: 0;
+    padding-left: 0;
 }
 .header-container {
     display: flex;
@@ -32,6 +32,7 @@ ul {
 }
 .header {
     border-bottom: 1px solid var(--accent);
+    padding: 24px 0;
 }
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -69,7 +70,6 @@ ul {
     display: flex;
     align-items: center;
     gap: 40px;
-    padding: 24px 0;
 }
 .header-menu-element {
     display: flex;
@@ -137,12 +137,7 @@ padding: 188px 0;
     padding: 120px 0;
 }
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin:... clip-path: inset(100%);
-    clip:rect(0 0 0 0);
-    overflow: hidden;
+    display: none;
 }
 .main-features-list {
    display: flex;
