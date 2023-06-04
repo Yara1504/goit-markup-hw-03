@@ -289,6 +289,7 @@ padding: 188px 0;
  border: 1px solid var(--accent);
  border-top: none;
  margin-bottom: 8px;
+ align-items: center;
 }
 footer {
     background-color: var(--dark);
