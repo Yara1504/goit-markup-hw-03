@@ -27,9 +27,8 @@ ul {
 .header-container {
     display: flex;
     width: 1158px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0 15px;
-    padding: 24px 0;
 }
 .header {
     border-bottom: 1px solid var(--accent);
@@ -70,6 +69,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 40px;
+    padding: 24px 0;
 }
 .header-menu-element {
     display: flex;
@@ -168,6 +168,7 @@ padding: 188px 0;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding: 120px 0;
 }
 .worker {
     background-color: var(--white-background);
@@ -234,6 +235,7 @@ padding: 188px 0;
 }
 .main-portfolio {
     padding-top: 96px;
+    padding-bottom: 120px;
 }
 .navigation {
     display: flex;
