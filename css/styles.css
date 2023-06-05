@@ -24,6 +24,15 @@ ul {
     margin: 0;
     padding-left: 0;
 }
+h1,h2,h3,h4,h5,h6, p {
+ margin: auto;
+}
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 .header-container {
     display: flex;
     width: 1158px;
@@ -42,7 +51,6 @@ ul {
     text-transform: uppercase;
     color: var(--primary-Brand);
     margin-right: 76px;
-    padding-left: 156px;
     }
 .header span{
     color: var(--dark);
@@ -57,28 +65,38 @@ ul {
     list-style: none;
 }
 .contacts-list {
- display: flex;
- gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 .header-menu {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--hero-background);  
     display: flex;
     align-items: center;
     gap: 40px;
 }
+.header-menu-bottom {
+    display: flex;
+    gap: 40px;
+}
 .header-menu-element {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--hero-background);
     display: flex;
     padding: 24px 0;
 }
+.header-link-contact {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
 .header-contacts {
-     font-style: normal;
-     gap: 40px;
-     margin-left: auto;
-     padding: 24px 0;
+    gap: 40px;
+    margin-left: auto;
+    padding: 24px 0;
 }
 .header-menu:hover,
 .header-menu:focus {
@@ -86,12 +104,6 @@ ul {
 }
 .mail-phone {
     font-style: normal;
-}
-.header-link {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text);
 }
 .header-link:hover,
 .header-link:focus {
@@ -114,8 +126,8 @@ padding: 188px 0;
     letter-spacing: 0.02em;
     color: var(--white-background);
     max-width: 496px;
-    margin-left: 472px;
-    margin-right: 472px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-btn {
     font-family: "Roboto", sans-serif;
@@ -131,8 +143,8 @@ padding: 188px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 48px;
-    margin-left: 636px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-features {
     padding: 120px 0;
@@ -178,8 +190,6 @@ padding: 188px 0;
 }
 .main-doing {
     padding-bottom: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
 }
 .what-doing {
  font-size: 36px;
@@ -195,6 +205,7 @@ padding: 188px 0;
     gap: 24px;
 }
 .img-working {
+ background-color: var(--modal-background);
  width: calc((100% - 48px) / 3);
 }
 .team-img {
@@ -221,7 +232,7 @@ padding: 188px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
+    color: var(--text);
 }
 .team-studio {
     font-size: 36px;
@@ -291,7 +302,7 @@ padding: 188px 0;
 }
 footer {
     background-color: var(--dark);
-    padding: 100px 0
+    padding: 100px 0;
 }
 .footer-text {
     line-height: 1.5;
@@ -309,7 +320,4 @@ footer {
     color: var(--primary-Brand);
     display: inline-block;
     margin-bottom: 16px;
-}
-.container-footer {
-    padding-left: 156px;
 }
