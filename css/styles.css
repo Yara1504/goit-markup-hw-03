@@ -25,7 +25,7 @@ ul {
     padding-left: 0;
 }
 h1,h2,h3,h4,h5,h6, p {
- margin: auto;
+ margin: 0;
 }
 .container {
     width: 1158px;
@@ -272,6 +272,8 @@ padding: 188px 0;
     border-radius: 4px;
 }
 .pictures {
+    border: 1px;
+    border-color: var(--accent);
     width: calc((100% - 48px)/3);
 }
 .projects-img {
@@ -297,7 +299,6 @@ padding: 188px 0;
  padding: 32px 16px;
  border: 1px solid var(--accent);
  border-top: none;
- margin-bottom: 8px;
  align-items: center;
 }
 footer {
